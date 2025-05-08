@@ -1,88 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ctrl Coffee</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ctrl Coffee</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="text-center p-4 bg-dark text-white">
-        <h1>Ctrl Coffee</h1>
-        <p>“Disfruta de un ambiente único y especial”</p>
-        <a href="#menu" class="btn btn-light m-2">Ver Menú</a>
-        <a href="#reserva" class="btn btn-light m-2">Reservar</a>
-    </header>
+  <!-- PORTADA PRINCIPAL -->
+  <section class="portada">
+    <h1 class="logo">Ctrl Coffee</h1>
+    <p class="frase-portada">“Disfruta de un ambiente único y especial”</p>
+    <div class="botones">
+      <a href="#menu" class="boton">Ver Menú</a>
+      <a href="#ubicacion" class="boton">Ubicación</a>
+      <a href="#bienvenida" class="boton">Bienvenidos</a>
+      <a href="#reserva" class="boton">Reservar</a>
+    </div>
+  </section>
 
-    <!-- BIENVENIDA -->
-    <section class="container text-center my-5">
-        <h2>Bienvenidos</h2>
-        <p>Siéntete como en casa</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a enim nec nisl ullamcorper eleifend...</p>
-        <a href="#reserva" class="btn btn-primary mt-3">Reservar Mesa</a>
-    </section>
+  <!-- BIENVENIDA -->
+  <section id="bienvenida" class="seccion">
+    <h2>“BIENVENIDOS”</h2>
+    <p class="frase">Siéntete como en casa</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a enim nec nisl ullamcorper eleifend. Praesent risus leo, fringilla et nulla at, egestas euismod orci. Suspendisse porttitor diam eu condimentum aliquam. Fusce interdum cursus nisl ut rutrum. Donec et sapien sit amet nisl pretium efficitur. Morbi faucibus felis mauris, sit amet finibus ipsum finibus at.</p>
+    <a href="#reserva" class="boton">Reservar Mesa</a>
+  </section>
 
-    <!-- MENÚ -->
-    <section id="menu" class="container my-5">
-        <h2 class="text-center mb-4">Nuestros Cafés & Otras Infusiones</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <ul class="list-group">
-                    <li class="list-group-item">Espresso - $3</li>
-                    <li class="list-group-item">Americano - $5</li>
-                    <li class="list-group-item">Café Latte - $7</li>
-                    <li class="list-group-item">Cappuccino - $7</li>
-                    <li class="list-group-item">Latte de Avellana - $7</li>
-                    <li class="list-group-item">Caramel Macchiato - $10</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <ul class="list-group">
-                    <li class="list-group-item">Té Verde - $3</li>
-                    <li class="list-group-item">Matcha Latte - $10</li>
-                    <li class="list-group-item">Chocolatada - $7</li>
-                    <li class="list-group-item">Té Chai - $5</li>
-                </ul>
-            </div>
-        </div>
-        <p class="text-center mt-4">"Disfrutá de nuestras especialidades hechas con granos seleccionados y mucho amor"</p>
-    </section>
+  <!-- MENÚ -->
+  <section id="menu" class="seccion menu">
+    <h2>Nuestros Cafés & Otras Infusiones</h2>
+    <div class="columnas">
+      <ul>
+        <li>Espresso <span>$3</span></li>
+        <li>Americano <span>$5</span></li>
+        <li>Café Latte <span>$7</span></li>
+        <li>Cappuccino <span>$7</span></li>
+        <li>Latte de Avellana <span>$7</span></li>
+        <li>Caramel Macchiato <span>$10</span></li>
+      </ul>
+      <ul>
+        <li>Té Verde <span>$3</span></li>
+        <li>Matcha Latte <span>$10</span></li>
+        <li>Chocolatada <span>$7</span></li>
+        <li>Té Chai <span>$5</span></li>
+      </ul>
+    </div>
+    <p class="frase">"Disfrutá de nuestras especialidades hechas con granos seleccionados y mucho amor"</p>
+  </section>
 
-    <!-- UBICACIÓN -->
-    <section class="text-center my-5">
-        <h2>Nueva Ubicación</h2>
-        <p>Calle Cualquiera 123, Cualquier Lado</p>
-    </section>
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="seccion">
+    <h2>Nueva Ubicación</h2>
+    <p>Calle Cualquiera 123, Cualquier Lado</p>
+  </section>
 
-    <!-- FORMULARIO DE RESERVA -->
-    <section id="reserva" class="container my-5">
-        <h2 class="text-center mb-4">Haz una Reserva</h2>
-        <form>
-            <div class="mb-3">
-                <label class="form-label">Escribe tu nombre</label>
-                <input type="text" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Tu teléfono o correo</label>
-                <input type="text" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Indica el día y la hora</label>
-                <input type="text" class="form-control" placeholder="Ej: 10 de mayo, 18:00h" required>
-            </div>
-            <button type="submit" class="btn btn-success">Reservar</button>
-        </form>
-    </section>
+  <!-- RESERVA -->
+  <section id="reserva" class="seccion">
+    <h2>Haz una Reserva</h2>
+    <form>
+      <label>Escribe tu nombre</label>
+      <input type="text" required />
+      <label>Tu teléfono o correo</label>
+      <input type="text" required />
+      <label>Indica el día y la hora</label>
+      <input type="text" placeholder="Ej: 10 de mayo, 18:00h" required />
+      <button type="submit" class="boton">Reservar</button>
+    </form>
+  </section>
 
-    <!-- CONTACTO -->
-    <footer class="bg-dark text-white text-center p-4 mt-5">
-        <p><strong>Horario:</strong> De martes a domingo, de 8:00h a 23:00h</p>
-        <p><strong>Email:</strong> ctrlcoffee@gmail.com</p>
-        <p><strong>Teléfono:</strong> 91-1234-567</p>
-        <p><strong>Redes Sociales:</strong> @CTRL+COFFEE</p>
-    </footer>
+  <!-- CONTACTO -->
+  <footer class="footer">
+    <h3>Contáctanos</h3>
+    <p><strong>Horario:</strong> De martes a domingo, de 8:00h a 23:00h</p>
+    <p><strong>Email:</strong> ctrlcoffee@gmail.com</p>
+    <p><strong>Teléfono:</strong> 91-1234-567</p>
+    <p><strong>Redes Sociales:</strong> @CTRL+COFFEE</p>
+  </footer>
 
 </body>
 </html>
