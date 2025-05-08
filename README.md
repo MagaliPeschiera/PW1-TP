@@ -1,1 +1,1 @@
-https://magalipeschiera.github.io/sitioweb/#ubicacion
+https://magalipeschiera.github.io/sitioweb/
