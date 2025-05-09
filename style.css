@@ -183,3 +183,54 @@
     font-size: 1.5rem;
   }
   
+  /* RESPONSIVO PARA MÓVIL */
+@media screen and (max-width: 768px) {
+
+  .navegacion {
+    flex-direction: column;
+    top: 10px;
+    right: 10px;
+    gap: 0.5rem;
+  }
+
+  .boton-nav {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .frase-portada {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  .boton-central {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .menu .columnas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu ul {
+    min-width: auto;
+    width: 80%;
+  }
+
+  .seccion h2 {
+    font-size: 1.5rem;
+  }
+
+  .seccion p {
+    font-size: 0.95rem;
+  }
+
+  form input {
+    font-size: 0.9rem;
+  }
+
+  .contenedor-logo img {
+    width: 90px;
+  }
+}
