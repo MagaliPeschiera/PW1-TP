@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ctrl+Coffee</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="imagens/logo.png" type="image/png" />
+</head>
+<body>
+  <!-- BARRA SUPERIOR -->
+  <div class="barra-superior">
+    <div class="contenedor-logo">
+      <a href="#inicio">
+        <img src="imagens/logo.png" alt="Logo de la cafetería" style="width: 100px;">
+      </a>
+    </div>
+
+    <nav class="navegacion">
+      <button id="modo-btn">🌙 Modo Oscuro</button>
+      <a href="#bienvenida" class="boton-nav">Bienvenidos</a>
+      <a href="#ubicacion" class="boton-nav">Ubicación</a>
+      <a href="#reserva" class="boton-nav">Reservar</a>
+    </nav>
+  </div>
+
+  <!-- INICIO -->
+  <section id="inicio">
+    <div class="contenido-central">
+      <p class="frase-portada">“Disfrutá de un ambiente único y especial”</p>
+      <a href="#menu" class="boton-central">Ver Menú</a>
+    </div>
+  </section>
+
+  <!-- BIENVENIDA -->
+  <section id="bienvenida" class="seccion">
+    <h2>Bienvenidos</h2>
+    <p class="frase">Sentite como en casa</p>
+    <p>Ctrl+Coffee es una cafetería ficticia creada para el proyecto final de la materia de diseño web.</p>
+    <a href="#reserva" class="boton">Reservar Mesa</a>
+  </section>
+
+  <!-- MENÚ -->
+  <section id="menu" class="seccion menu">
+    <h2>Nuestros Cafés & Otras Infusiones</h2>
+    <div class="columnas">
+      <ul>
+        <li>Espresso <span>$3</span></li>
+        <li>Americano <span>$5</span></li>
+        <li>Café Latte <span>$7</span></li>
+      </ul>
+      <ul>
+        <li>Té Verde <span>$3</span></li>
+        <li>Matcha Latte <span>$10</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="seccion">
+    <h2>Nuestra Ubicación</h2>
+    <p>Calle Cualquiera 123, Cualquier Lado</p>
+    <div class="mapa-contenedor">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999166695222!2d2.2922926156740444!3d48.858373079287746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdf72f9cf05%3A0x40b82c3688c9460!2sCalle%20Cualquiera%20123!5e0!3m2!1ses-419!2sar!4v1686010023134!5m2!1ses-419!2sar"
+        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- RESERVA -->
+  <section id="reserva" class="seccion">
+    <h2>Hacé tu Reserva</h2>
+    <p>Este sitio fue desarrollado como parte de un proyecto escolar. ¡Gracias por visitar!</p>
+    <form id="contact-form">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+
+      <label for="email">Correo Electrónico</label>
+      <input type="email" id="email" name="email" required placeholder="ejemplo@mail.com" />
+
+      <label for="fecha">Fecha y Hora</label>
+      <input type="text" id="fecha" name="fecha" required placeholder="Ej: 12 de julio a las 18hs" />
+
+      <button type="submit" class="boton">Reservar</button>
+    </form>
+    <p id="mensaje" style="margin-top: 10px;"></p>
+  </section>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/5491173653504" class="whatsapp-float" target="_blank">
+    <img src="imagens/icon_wasap.png" alt="" class="icono-whatsapp">
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <h3>Contactanos</h3>
+    <p><strong>Horario:</strong> De martes a domingo, de 8:00h a 23:00h</p>
+    <p><strong>Email:</strong> ctrlcoffee@gmail.com</p>
+    <div class="redes">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+     <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2025 Hecho por Magali Peschiera</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
