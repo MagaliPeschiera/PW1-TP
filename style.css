@@ -1,4 +1,4 @@
-/* RESET GENERAL */
+/* Estilos generales */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,39 +12,25 @@ body {
   line-height: 1.6;
 }
 
-/* PORTADA - INICIO */
-#inicio {
-  height: 100vh;
-  background-image: url(imagens/imagen1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
-  position: relative;
+/* Barra superior */
+.barra-superior {
+  width: 100%;
+  background-color: rgba(58, 54, 46, 0.9);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  text-align: center;
-}
-
-/* Logo */
-.contenedor-logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .contenedor-logo img {
-  width: 120px;
+  width: 100px;
 }
 
-/* Navegación */
 .navegacion {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   display: flex;
   gap: 1rem;
 }
@@ -63,7 +49,23 @@ body {
   background-color: #2c2923;
 }
 
-/* Contenido central portada */
+/* Portada */
+#inicio {
+  height: 100vh;
+  background-image: url(imagens/imagen1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contenido-central {
+  margin-top: 100px;
+}
+
 .frase-portada {
   font-size: 2rem;
   font-style: italic;
@@ -88,35 +90,7 @@ body {
   background-color: #f4f0ea;
 }
 
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  font-size: 28px;
-  width: 55px;
-  height: 55px;
-  text-align: center;
-  border-radius: 50%;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-  transition: background 0.3s ease;
-}
-
-.icono-whatsapp {
-            width: 50px; /* Ajusta el tamaño según lo necesites /
-            height: auto; / Para mantener la proporción /
-            vertical-align: middle; / Para alinear si hay texto al lado */
-        }
-.whatsapp-float:hover {
-  background-color: #1ebe57;
-}
-
-/* SECCIONES GENERALES */
+/* Secciones */
 .seccion {
   padding: 3rem 2rem;
   text-align: center;
@@ -145,7 +119,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* MENÚ */
+/* Menú */
 .menu .columnas {
   display: flex;
   flex-wrap: wrap;
@@ -167,7 +141,7 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
-/* MAPA */
+/* Mapa */
 .mapa-contenedor {
   margin-top: 1rem;
   border-radius: 15px;
@@ -175,7 +149,7 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* FORMULARIO */
+/* Formulario */
 form {
   background-color: #fff;
   padding: 2rem;
@@ -209,7 +183,7 @@ form input::placeholder {
   color: #aaa;
 }
 
-/* BOTÓN GENÉRICO */
+/* Botones */
 .boton {
   background-color: #3a362e;
   color: #fff;
@@ -225,7 +199,31 @@ form input::placeholder {
   background-color: #2c2923;
 }
 
-/* FOOTER */
+/* WhatsApp flotante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.icono-whatsapp {
+  width: 50px;
+  height: auto;
+}
+
+/* Footer */
 .footer {
   background-color: #3a362e;
   color: #f4f0ea;
@@ -238,10 +236,6 @@ form input::placeholder {
 .footer h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-}
-
-.footer p {
-  margin: 0.3rem 0;
 }
 
 .footer .redes {
@@ -258,59 +252,3 @@ form input::placeholder {
 .footer .redes a:hover {
   color: #ccc;
 }
-
-/* RESPONSIVE */
-@media screen and (max-width: 768px) {
-  .navegacion {
-    flex-direction: column;
-    gap: 0.5rem;
-    top: 10px;
-    right: 10px;
-  }
-
-  .boton-nav {
-    font-size: 0.9rem;
-    padding: 6px 12px;
-  }
-
-  .frase-portada {
-    font-size: 1.2rem;
-    padding: 0.8rem;
-  }
-
-  .boton-central {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-
-  .menu .columnas {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu ul {
-    width: 80%;
-  }
-
-  .contenedor-logo img {
-    width: 90px;
-  }
-
-  .seccion h2 {
-    font-size: 1.5rem;
-  }
-
-  .seccion p {
-    font-size: 0.95rem;
-  }
-
-  form input {
-    font-size: 0.9rem;
-  }
-
-  .whatsapp-float {
-    font-size: 24px;
-    padding: 12px;
-  }
-}
-
