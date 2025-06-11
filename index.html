@@ -126,12 +126,11 @@
         return;
       }
 
-      const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
-      if (!emailRegex.test(email)) {
-        mensaje.style.color = "red";
-        mensaje.textContent = "Por favor, ingresá un correo válido.";
-        return;
-      }
+if (!email.includes("@") || !email.includes(".")) {
+  mensaje.style.color = "red";
+  mensaje.textContent = "Por favor, ingresá un correo válido.";
+  return;
+}
 
       try {
         const response = await fetch("https://formspree.io/f/xdkzeqkd", {
