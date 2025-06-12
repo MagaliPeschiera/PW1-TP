@@ -1,3 +1,4 @@
+// FORMULARIO
 document.getElementById("contact-form").addEventListener("submit", async function (e) {
   e.preventDefault();
 
@@ -42,5 +43,21 @@ document.getElementById("contact-form").addEventListener("submit", async functio
   } catch (error) {
     mensaje.style.color = "red";
     mensaje.textContent = "No se pudo conectar con el servidor.";
+  }
+});
+
+// MODO OSCURO / CLARO
+const botonModo = document.getElementById('modo-btn');
+const body = document.body;
+const secciones = document.querySelectorAll('.barra-superior, .seccion, footer, form');
+
+botonModo.addEventListener('click', () => {
+  body.classList.toggle('modo-oscuro');
+  secciones.forEach(sec => sec.classList.toggle('modo-oscuro'));
+
+  if (body.classList.contains('modo-oscuro')) {
+    botonModo.textContent = '☀️ Modo Claro';
+  } else {
+    botonModo.textContent = '🌙 Modo Oscuro';
   }
 });
