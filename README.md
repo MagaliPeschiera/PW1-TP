@@ -1,1 +1,1 @@
-https://magalipeschiera.github.io/pw1-tp/
+https://magalipeschiera.github.io/PW1-TP/
