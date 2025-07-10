@@ -16,44 +16,156 @@
         <img src="imagens/logo.png" alt="Logo de la cafetería" style="width: 100px;">
       </a>
     </div>
-
     <nav class="navegacion">
-      <button id="modo-btn">🌙 Modo Oscuro</button>
+      <div id="modo-switch" class="modo-switch" tabindex="0" aria-label="Cambiar modo claro/oscuro"><span id="modo-icono" class="modo-icono"><i class="fas fa-moon"></i></span></div>
       <a href="#bienvenida" class="boton-nav">Bienvenidos</a>
+      <a href="#menu" class="boton-nav">Menú</a>
       <a href="#ubicacion" class="boton-nav">Ubicación</a>
-      <a href="#reserva" class="boton-nav">Reservar</a>
     </nav>
   </div>
+  <button id="btn-volver-arriba" class="btn-volver-arriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Volver al inicio</button>
 
   <!-- INICIO -->
   <section id="inicio">
     <div class="contenido-central">
-      <p class="frase-portada">“Disfrutá de un ambiente único y especial”</p>
-      <a href="#menu" class="boton-central">Ver Menú</a>
+      <p class="frase-portada" style="font-family: 'Georgia', serif; font-size: 2.2rem; color: #6f4e37;">Un refugio cálido para amantes del café y la buena compañía</p>
+      <a href="#reserva-contacto" class="boton-central">Reservar</a>
     </div>
   </section>
 
   <!-- BIENVENIDA -->
   <section id="bienvenida" class="seccion">
-    <h2>Bienvenidos</h2>
+    <h2>Bienvenidos a Ctrl+Coffee</h2>
     <p class="frase">Sentite como en casa</p>
-    <p>Ctrl+Coffee es una cafetería ficticia creada para el proyecto final de la materia de programacion web.</p>
-    <a href="#reserva" class="boton">Reservar Mesa</a>
+    <p>Ctrl+Coffee es una cafetería ficticia creada para el proyecto final de la materia de programación web. Nuestro espacio está diseñado para brindarte una experiencia única donde la tecnología y el café se encuentran.</p>
+    <p>En nuestro ambiente acogedor, podrás disfrutar de una amplia variedad de cafés de especialidad, infusiones artesanales y deliciosos acompañamientos. Nuestro equipo está comprometido en ofrecerte el mejor servicio y la más alta calidad en cada taza.</p>
+    <p>Ya sea que vengas a trabajar, estudiar o simplemente a relajarte, encontrarás el lugar perfecto para hacerlo. ¡Te esperamos!</p>
   </section>
 
   <!-- MENÚ -->
   <section id="menu" class="seccion menu">
-    <h2>Nuestros Cafés & Otras Infusiones</h2>
+    <h2>Nuestro Menú</h2>
+    <p class="frase">Descubrí nuestras especialidades</p>
     <div class="columnas">
-      <ul>
-        <li>Espresso <span>$3</span></li>
-        <li>Americano <span>$5</span></li>
-        <li>Café Latte <span>$7</span></li>
-      </ul>
-      <ul>
-        <li>Té Verde <span>$3</span></li>
-        <li>Matcha Latte <span>$10</span></li>
-      </ul>
+      <div class="menu-categoria">
+        <img src="imagens/cafe.jpg" alt="Cafés de especialidad" class="menu-imagen">
+        <h3>Cafés de Especialidad</h3>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Espresso Clásico</div>
+            <div class="descripcion">Intenso y aromático, perfecto para comenzar el día</div>
+          </div>
+          <div class="precio">$3</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Americano</div>
+            <div class="descripcion">Suave y equilibrado, ideal para cualquier momento</div>
+          </div>
+          <div class="precio">$5</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Café Latte</div>
+            <div class="descripcion">Cremoso y delicado, con leche vaporizada</div>
+          </div>
+          <div class="precio">$7</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Cappuccino</div>
+            <div class="descripcion">Perfecto balance entre café, leche y espuma</div>
+          </div>
+          <div class="precio">$8</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Mocha</div>
+            <div class="descripcion">Café con chocolate, una combinación irresistible</div>
+          </div>
+          <div class="precio">$9</div>
+        </div>
+      </div>
+
+      <div class="menu-categoria">
+        <img src="imagens/te.jpg" alt="Infusiones y tés" class="menu-imagen">
+        <h3>Infusiones & Tés</h3>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Té Verde</div>
+            <div class="descripcion">Refrescante y antioxidante</div>
+          </div>
+          <div class="precio">$3</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Matcha Latte</div>
+            <div class="descripcion">Té verde japonés con leche cremosa</div>
+          </div>
+          <div class="precio">$10</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Té Negro</div>
+            <div class="descripcion">Clásico y reconfortante</div>
+          </div>
+          <div class="precio">$3</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Chai Latte</div>
+            <div class="descripcion">Especiado y aromático</div>
+          </div>
+          <div class="precio">$8</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Té de Manzanilla</div>
+            <div class="descripcion">Relajante y digestivo</div>
+          </div>
+          <div class="precio">$4</div>
+        </div>
+      </div>
+
+      <div class="menu-categoria">
+        <img src="imagens/acompanamientos.jpg" alt="Acompañamientos" class="menu-imagen">
+        <h3>Acompañamientos</h3>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Croissant Clásico</div>
+            <div class="descripcion">Hojaldrado y mantecoso</div>
+          </div>
+          <div class="precio">$4</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Tarta de Manzana</div>
+            <div class="descripcion">Casera y deliciosa</div>
+          </div>
+          <div class="precio">$6</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Brownie</div>
+            <div class="descripcion">Chocolate intenso y húmedo</div>
+          </div>
+          <div class="precio">$5</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Galletas de Avena</div>
+            <div class="descripcion">Saludables y nutritivas</div>
+          </div>
+          <div class="precio">$3</div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <div class="nombre">Tostadas con Mantequilla</div>
+            <div class="descripcion">Simples y deliciosas</div>
+          </div>
+          <div class="precio">$2</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -68,23 +180,37 @@
     </div>
   </section>
 
-  <!-- RESERVA -->
-  <section id="reserva" class="seccion">
-    <h2>Hacé tu Reserva</h2>
-    <p>Este sitio fue desarrollado como parte de un proyecto para la materia de programacion web. ¡Gracias por visitar!</p>
-    <form id="contact-form">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
-
-      <label for="email">Correo Electrónico</label>
-      <input type="email" id="email" name="email" required placeholder="ejemplo@mail.com" />
-
-      <label for="fecha">Fecha y Hora</label>
-      <input type="text" id="fecha" name="fecha" required placeholder="Ej: 12 de julio a las 18hs" />
-
-      <button type="submit" class="boton">Reservar</button>
-    </form>
-    <p id="mensaje" style="margin-top: 10px;"></p>
+  <!-- RESERVA Y CONTACTO -->
+  <section id="reserva-contacto" class="seccion reserva-contacto">
+    <div class="reserva-contacto-contenedor">
+      <div class="contacto-info">
+        <h2>Contáctanos</h2>
+        <h3>Te esperamos</h3>
+        <p><strong>HORARIO</strong><br>DE MARTES A DOMINGO, DE 8:00H A 23:00H.</p>
+        <hr>
+        <p><strong>TELÉFONO</strong><br>91-1234-567</p>
+        <p><strong>EMAIL</strong><br><a href="mailto:ctrlcoffee@gmail.com">CTRLCOFFEE@GMAIL.COM</a></p>
+        <p><strong>REDES SOCIALES</strong><br>
+          <span class="redes">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </span>
+          <br>
+          <a href="#">@CTRL+COFFEE</a>
+        </p>
+      </div>
+      <form id="contact-form">
+        <h2>Haz una reserva</h2>
+        <p>TAMBIÉN PUEDES RESERVAR POR TELÉFONO SI LO PREFIERES.</p>
+        <input type="datetime-local" id="fecha" name="fecha" required placeholder="INDICA EL DÍA Y LA HORA" />
+        <input type="text" id="nombre" name="nombre" required placeholder="ESCRIBE TU NOMBRE" />
+        <input type="text" id="telefono" name="telefono" required placeholder="TU TELÉFONO O CORREO" />
+        <button type="submit" class="boton">RESERVAR</button>
+        <p id="mensaje" style="margin-top: 10px;"></p>
+      </form>
+    </div>
   </section>
 
   <!-- WhatsApp flotante -->
@@ -94,18 +220,11 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <h3>Contactanos</h3>
-    <p><strong>Horario:</strong> De martes a domingo, de 8:00h a 23:00h</p>
-    <p><strong>Email:</strong> ctrlcoffee@gmail.com</p>
-    <div class="redes">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-tiktok"></i></a>
-    </div>
-     <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2025 Hecho por Magali Peschiera</p>
+    <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2025 Hecho por Magali Peschiera</p>
   </footer>
 
   <!-- JS -->
   <script src="script.js"></script>
+  <button id="btn-volver-abajo-izq" class="btn-volver-abajo-izq" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" aria-label="Volver al inicio"><i class="fas fa-arrow-up"></i></button>
 </body>
 </html>
